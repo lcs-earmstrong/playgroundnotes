@@ -75,8 +75,8 @@ var str = "Hello, playground"
  }
  */
 
-// Get the binary representation of a value
-func getBinaryRepresentation(of ValueToConvert: Int) -> String  {
+// Get the alternate representation of a value in a different base
+func getRepresentation(of ValueToConvert: Int, inBase base: Int) -> String  {
     
  
     // Create a variable with the value of "valueToConvert"
@@ -84,29 +84,29 @@ func getBinaryRepresentation(of ValueToConvert: Int) -> String  {
     var DecimalValueLeftToConvert = ValueToConvert
     // This creates an empty string
     // A string is just text like "hello"
-    var binaryRepresentation = ""
+    var representation = ""
 
     //This abstraction will use is a LOOP
     // Our end condition is that the decimalValueLefttoConvert is equal to zero
     // So long as the Condition is true, the block of code surrounded by the ( ) brackets will be run repeatedly
     while DecimalValueLeftToConvert > 0 {
-    //Get the next binary digit
-        let nextBinaryDigit = DecimalValueLeftToConvert % 2
-        //Add that new digit to the binary representation
+    //Get the next digit
+        let nextDigit = DecimalValueLeftToConvert % base
+        //Add that new digit to the representation
         // Swift is Strickly Typed Language
         // It DOES NOT automatically convert data types
         // So, to make the Int into a String we need to specify this
-        binaryRepresentation = String(nextBinaryDigit) + binaryRepresentation
+        representation = String(nextDigit) + representation
         //Get the decimal value left to convert
-         DecimalValueLeftToConvert = DecimalValueLeftToConvert / 2
+         DecimalValueLeftToConvert = DecimalValueLeftToConvert / base
         
     }
-    return binaryRepresentation
+    return representation
 }
 
 // Call or use the function
-getBinaryRepresentation(of: 121)
-getBinaryRepresentation(of: 5789)
-getBinaryRepresentation(of: 2345)
-getBinaryRepresentation(of: 25)
-getBinaryRepresentation(of: 15)
+getRepresentation(of: 121, inBase: 8)
+getRepresentation(of: 5789, inBase: 2)
+getRepresentation(of: 2345, inBase: 8)
+getRepresentation(of: 25, inBase: 8)
+getRepresentation(of: 15, inBase: 2)
