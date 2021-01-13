@@ -148,7 +148,6 @@ func getRepresentation(of ValueToConvert: Int, inBase base: numberSystemBase) ->
             representation = String(nextDigit) + representation
         }
         
-        representation = String(nextDigit) + representation
         //Get the decimal value left to convert
         DecimalValueLeftToConvert = DecimalValueLeftToConvert / base.rawValue
         
@@ -158,5 +157,5 @@ func getRepresentation(of ValueToConvert: Int, inBase base: numberSystemBase) ->
 
 // Call or use the function
 
-getRepresentation(of: 17, inBase: .binary)
+getRepresentation(of: 15, inBase: .hexidecimal)
 
