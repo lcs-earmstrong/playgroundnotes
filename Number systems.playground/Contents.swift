@@ -59,10 +59,10 @@ var str = "Hello, playground"
 // 76 in binary = 1001100 in base 2
 // A constant cannot be changed once created
 
+// Enumeration
+//An enumeration simply lists possibilities
 
-
-// FUnctions
-
+// Functions
 // Functions are a way to group (encapsulate) related behavior
 //Once some behavior is inside a function, the complexity is hidden
 // We can use, or "call", the function whenever we want
@@ -105,8 +105,6 @@ func getRepresentation(of ValueToConvert: Int, inBase base: Int) -> String  {
 }
 
 // Call or use the function
-getRepresentation(of: 121, inBase: 8)
-getRepresentation(of: 5789, inBase: 2)
-getRepresentation(of: 2345, inBase: 8)
-getRepresentation(of: 25, inBase: 8)
-getRepresentation(of: 15, inBase: 2)
+
+getRepresentation(of: 17, inBase: 2)
+
