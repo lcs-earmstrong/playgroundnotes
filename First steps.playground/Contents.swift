@@ -14,3 +14,4 @@ str = "goodbye"
 // Strings and Integers
 // On a whole number swift will asign the type Int which is short for integer
 
+// 
