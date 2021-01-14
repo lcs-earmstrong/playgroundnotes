@@ -10,8 +10,9 @@ str = "goodbye"
 // Variables are places where you can store program data
 // Called variables because they cna vary
 // you can change the variables easily
+// 6/6 on variable test
 
 // Strings and Integers
 // On a whole number swift will asign the type Int which is short for integer
 
-// 
+//
