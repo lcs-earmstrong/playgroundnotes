@@ -63,7 +63,16 @@ let XcodeLanguage = "Swift"
 // Type annotations
 //Swift assigns each variable and constant a type based on what value it’s given when it’s created
 // When you write code like this swift can see it holds a string
-// This makes
+let str2 = "Type annotations"
+// This makes str a string so you can't try to assign it a integer or bolean later on.
+// This is what's called type inference
+// Swift is able to infer the type of something based on how you created it
+
+// You can also be specific if you don't want to rely on swifts type inferences ex.
+
+let year: Int = 1914
+let height: Double = 5.79
+let GordonComputerStudies : Bool = true
 
 
 
