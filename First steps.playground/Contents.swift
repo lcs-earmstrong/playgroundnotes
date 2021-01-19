@@ -73,7 +73,3 @@ let str2 = "Type annotations"
 let year: Int = 1914
 let height: Double = 5.79
 let GordonComputerStudies : Bool = true
-
-
-
-
