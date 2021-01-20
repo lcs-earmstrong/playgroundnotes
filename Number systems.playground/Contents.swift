@@ -164,16 +164,16 @@ getRepresentation(of: 15, inBase: .hexidecimal)
 
 // The value we are converting
 let value = "1011011"
-
+//
 // What base are we converting from
 let base = 2.0
-
+//
 // The exponent value at the right most digit
 var exponent = 0.0
-
+//
 // the current sum in decimal
 var decimalEquivalent = 0.0
-
+//
 // Iterate over each character
 // From right to left!
 for character in value.reversed() {
@@ -191,3 +191,32 @@ for character in value.reversed() {
 }
 // get the value
 decimalEquivalent
+
+
+// For octal/ base 8
+var value1 = "34"
+var base1 = 8.0
+//
+// The exponent value at the right most digit
+var exponent1 = 0.0
+//
+// the current sum in decimal
+var decimalEquivalent1 = 0.0
+//
+// Iterate over each character
+// From right to left!
+for character in value1.reversed() {
+    
+    // Get the current digit as a double (decimal)
+    if let digit = Double(String(character)){
+        
+        // Add the current sum
+       decimalEquivalent += digit * pow (base, exponent)
+        
+        // Increment the exponent
+        exponent1 += 1
+    }
+                                                      
+}
+// get the value
+decimalEquivalent1
